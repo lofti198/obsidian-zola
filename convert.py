@@ -126,7 +126,7 @@ def filter_lines(file: Path, content: List[str]) -> List[str]:
     """
     # Replace relative links
     parent_dir = f"{file.parents[0]}".replace(str(ZOLA_DIR / "content"), "").replace(
-        " ", "%20"
+        " ", "-"
     )
 
     # Markdown links: [xxx](yyy)
